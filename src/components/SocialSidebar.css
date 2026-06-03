@@ -17,7 +17,7 @@
 .sidebar {
   position: fixed;
   bottom: 0;
-  z-index: var(--z-base);
+  z-index: 90;
 }
 
 .sidebar--left {
@@ -58,7 +58,7 @@
 
 .sidebar__icon-link:hover {
   color: var(--accent);
-  transform: translateY(-3px);
+  transform: translateY(-3px) scale(1.1);
 }
 
 .sidebar__icon-link svg {
@@ -81,7 +81,7 @@
 
 .sidebar__email:hover {
   color: var(--accent);
-  transform: translateY(-3px);
+  transform: translateY(-3px) scale(1.05);
 }
 
 /* ===================================

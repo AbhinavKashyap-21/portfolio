@@ -3,6 +3,7 @@ import './SocialSidebar.css';
 const socials = [
   {
     label: 'GitHub',
+    ariaLabel: 'GitHub Profile',
     href: 'https://github.com/Nityeh',
     icon: (
       <svg
@@ -21,6 +22,7 @@ const socials = [
   },
   {
     label: 'LinkedIn',
+    ariaLabel: 'LinkedIn Profile',
     href: 'https://linkedin.com/in/nityeh-aggarwal',
     icon: (
       <svg
@@ -41,7 +43,8 @@ const socials = [
   },
   {
     label: 'Email',
-    href: 'mailto:nityeh.030@gmail.com',
+    ariaLabel: 'Send Email',
+    href: 'mailto:nityeh.030@gmail.com?subject=Portfolio%20Inquiry',
     icon: (
       <svg
         width="20"
@@ -73,7 +76,7 @@ export default function SocialSidebar() {
               className="sidebar__icon-link"
               target={social.href.startsWith('mailto') ? undefined : '_blank'}
               rel={social.href.startsWith('mailto') ? undefined : 'noopener noreferrer'}
-              aria-label={social.label}
+              aria-label={social.ariaLabel}
               style={{ animationDelay: `${800 + i * 120}ms` }}
             >
               {social.icon}
@@ -87,8 +90,9 @@ export default function SocialSidebar() {
       <aside className="sidebar sidebar--right" aria-label="Email">
         <div className="sidebar__content">
           <a
-            href="mailto:nityeh.030@gmail.com"
+            href="mailto:nityeh.030@gmail.com?subject=Portfolio%20Inquiry"
             className="sidebar__email"
+            aria-label="Send Email"
             style={{ animationDelay: '900ms' }}
           >
             nityeh.030@gmail.com

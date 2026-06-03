@@ -113,13 +113,14 @@
 }
 
 .footer__socials a {
+  display: inline-block;
   color: var(--text-secondary);
   transition: all var(--transition-fast);
 }
 
 .footer__socials a:hover {
   color: var(--accent);
-  transform: translateY(-3px);
+  transform: translateY(-3px) scale(1.1);
 }
 
 .footer__content {

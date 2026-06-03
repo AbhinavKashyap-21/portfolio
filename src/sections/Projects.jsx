@@ -163,12 +163,12 @@ export default function Projects() {
                 Browse the complete engineering portfolio on GitHub.
               </p>
               <a
-                href="https://github.com"
+                href="https://github.com/Nityeh"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="proj-card__cta-link"
               >
-                github.com →
+                github.com/Nityeh →
               </a>
             </div>
           </article>

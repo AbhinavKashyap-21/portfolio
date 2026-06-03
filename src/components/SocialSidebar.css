@@ -88,7 +88,7 @@
    RESPONSIVE — Hide on Mobile
    =================================== */
 
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
   .sidebar--left,
   .sidebar--right {
     display: none;

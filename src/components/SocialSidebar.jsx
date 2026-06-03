@@ -39,6 +39,7 @@ const socials = [
       </svg>
     ),
   },
+  {
     label: 'Email',
     href: 'mailto:nityeh.030@gmail.com',
     icon: (

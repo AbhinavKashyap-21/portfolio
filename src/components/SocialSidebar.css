@@ -1,0 +1,96 @@
+/* ===================================
+   SOCIAL SIDEBAR COMPONENT
+   =================================== */
+
+@keyframes sidebarFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---- Base ---- */
+.sidebar {
+  position: fixed;
+  bottom: 0;
+  z-index: var(--z-base);
+}
+
+.sidebar--left {
+  left: 30px;
+}
+
+.sidebar--right {
+  right: 30px;
+}
+
+.sidebar__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* ---- Vertical Line ---- */
+.sidebar__line {
+  display: block;
+  width: 1px;
+  height: 90px;
+  background: var(--text-tertiary);
+}
+
+/* ---- Social Icon Links ---- */
+.sidebar__icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color var(--transition-fast),
+    transform var(--transition-fast);
+  opacity: 0;
+  animation: sidebarFadeIn 0.5s ease forwards;
+}
+
+.sidebar__icon-link:hover {
+  color: var(--accent);
+  transform: translateY(-3px);
+}
+
+.sidebar__icon-link svg {
+  display: block;
+}
+
+/* ---- Email Link (Right Sidebar) ---- */
+.sidebar__email {
+  writing-mode: vertical-rl;
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  letter-spacing: 0.1em;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color var(--transition-fast),
+    transform var(--transition-fast);
+  opacity: 0;
+  animation: sidebarFadeIn 0.5s ease forwards;
+}
+
+.sidebar__email:hover {
+  color: var(--accent);
+  transform: translateY(-3px);
+}
+
+/* ===================================
+   RESPONSIVE — Hide on Mobile
+   =================================== */
+
+@media (max-width: 768px) {
+  .sidebar--left,
+  .sidebar--right {
+    display: none;
+  }
+}

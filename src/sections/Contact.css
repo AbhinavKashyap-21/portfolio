@@ -1,0 +1,138 @@
+/* ================================================================
+   CONTACT — Engineering Transmission Block
+   ================================================================ */
+
+.contact-section {
+  padding-bottom: 0;
+  border-top: 1px solid var(--border-light);
+}
+
+.contact__inner {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: var(--space-5xl) 0 var(--space-4xl);
+  position: relative;
+}
+
+.contact__spec-corner {
+  position: absolute;
+  top: var(--space-2xl);
+  right: 0;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.contact__spec-corner span {
+  font-family: var(--font-tech);
+  font-size: 0.55rem;
+  color: var(--text-tertiary);
+  letter-spacing: 0.1em;
+  opacity: 0.5;
+}
+
+.contact__label {
+  font-family: var(--font-tech);
+  font-size: var(--fs-xs);
+  color: var(--accent);
+  letter-spacing: 0.25em;
+  margin-bottom: var(--space-lg);
+}
+
+.contact__heading {
+  font-family: var(--font-display);
+  font-size: var(--fs-4xl);
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  color: var(--text-heading);
+  margin-bottom: var(--space-xl);
+  line-height: 1;
+}
+
+.contact__line {
+  width: 80px;
+  height: 1px;
+  background: var(--accent);
+  margin: 0 auto var(--space-xl);
+}
+
+.contact__text {
+  color: var(--text-secondary);
+  font-family: var(--font-body);
+  font-size: var(--fs-base);
+  line-height: 1.8;
+  margin-bottom: var(--space-3xl);
+}
+
+.contact__btn {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: var(--fs-sm);
+  letter-spacing: 0.15em;
+  color: var(--text-heading);
+  border: 1px solid var(--text-heading);
+  padding: 16px 48px;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-base);
+  text-decoration: none;
+}
+
+.contact__btn:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px var(--accent-glow-md);
+}
+
+/* Footer */
+.footer {
+  padding: var(--space-3xl) 0 var(--space-xl);
+}
+
+.footer__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 clamp(24px, 5vw, 80px);
+}
+
+.footer__line {
+  width: 100%;
+  height: 1px;
+  background: var(--border-light);
+  margin-bottom: var(--space-xl);
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__credit {
+  font-family: var(--font-tech);
+  font-size: 0.6rem;
+  color: var(--text-tertiary);
+  letter-spacing: 0.15em;
+}
+
+.footer__year {
+  font-family: var(--font-tech);
+  font-size: 0.6rem;
+  color: var(--text-tertiary);
+  letter-spacing: 0.1em;
+}
+
+@media (max-width: 768px) {
+  .contact__spec-corner { display: none; }
+  .contact__heading { font-size: var(--fs-3xl); }
+}
+
+@media (max-width: 480px) {
+  .footer__content {
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+}

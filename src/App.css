@@ -1,0 +1,22 @@
+/* ================================================================
+   APP LAYOUT — Engineering Dossier
+   ================================================================ */
+
+.app {
+  position: relative;
+  min-height: 100vh;
+}
+
+main {
+  position: relative;
+  z-index: var(--z-base);
+}
+
+/* Sections flow naturally */
+main > section {
+  position: relative;
+}
+
+main > section + section {
+  margin-top: 0;
+}

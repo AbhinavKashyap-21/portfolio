@@ -43,8 +43,8 @@ const socials = [
   },
   {
     label: 'Email',
-    ariaLabel: 'Send Email',
-    href: 'mailto:nityeh.030@gmail.com?subject=Portfolio%20Inquiry',
+    ariaLabel: 'Compose Email in Gmail',
+    href: 'https://mail.google.com/mail/?view=cm&fs=1&to=nityeh.030@gmail.com&su=Portfolio%20Inquiry',
     icon: (
       <svg
         width="20"
@@ -90,9 +90,11 @@ export default function SocialSidebar() {
       <aside className="sidebar sidebar--right" aria-label="Email">
         <div className="sidebar__content">
           <a
-            href="mailto:nityeh.030@gmail.com?subject=Portfolio%20Inquiry"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=nityeh.030@gmail.com&su=Portfolio%20Inquiry"
             className="sidebar__email"
-            aria-label="Send Email"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Compose Email in Gmail"
             style={{ animationDelay: '900ms' }}
           >
             nityeh.030@gmail.com

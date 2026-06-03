@@ -23,7 +23,7 @@ export default function Contact() {
             something extraordinary together.
           </p>
           <a
-            href="mailto:nityehaggarwal@gmail.com"
+            href="mailto:nityeh.030@gmail.com"
             className="contact__btn"
             id="contact-btn"
           >
